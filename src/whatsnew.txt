@@ -1,3 +1,94 @@
+GAM 4.40
+ - Team Drive Admin "asadmin" to give admins special access.
+ - Manage Buildings, Features and Resource Calendars.
+ - Download log files for kiosk Chrome devices.
+ - TPM info and vulnerability status for Chrome devices.
+ - New Google library for service account auth.
+ - (Ross) increase cell count for "todrive" to 2M.
+ - (Ross) improved course id handling.
+ - (Ross) numerous cleanups and bug fixes
+
+GAM 4.32
+ - Fixes and improvements by Ross
+ - gam print courses now supports limiting results based on course state
+ - handle issues adding members to a group who were in a pending status before
+ - Data transfer commands now support transferring user Calendar events.
+
+GAM 4.31
+ - Update course owners in Classroom
+ - support for time deltas like -4h for some commands (danielx)
+ - Set location, ssh keys and posix accounts details on user create/update
+ - support batch move of Chrome OS devices for better performance
+ - Huge amount of cleanup / performance improvements by Ross
+
+GAM 4.30
+ - Google Vault Matters and Hold API support
+ - Ross - "gam update group" now uses batch for better performance
+ - "gam update project" enables new APIs for your project
+ - Include root level OrgUnit in OrgUnit commands
+ - Bulk move Chrome devices between OrgUnits
+ - Usual fixes / cleanups / improvements by Ross and Jay
+
+GAM 4.22
+ - Validate client id and secret from user input (reduces user errors on create project)
+ - Ross - optimize "gam print printjobs"
+ - Ross- countsonly option for gam print courses
+
+GAM 4.21
+ - Drive v3 fixes/updates by Ross
+ - "gam print crosactivty" command outputs active users and times
+ - SMime and calendar ACL fixes by Ross
+ - standardized cros info/print functionality by Ross
+
+GAM 4.2
+ - Create, Update, Delete and List Team Drives
+ - Start moving to Drive API v3
+ - Disable GAM cache by default to prevent errors (Ross)
+ - Use service accounts for all Calendar, Drive and Gmail operations to reduce scopes
+ - Fix "Unknown" errors due to a scope issue (may require "gam oauth revoke" and re-authentication)
+ - "gam info domain" shows basic user / license sums again
+ - "gam report customer" now shows more browser usage stats
+ - Fix project creation ToS error (Ross)
+
+GAM 4.12
+ - Realtime 2SV user status in gam info user and gam print users. Thanks hajdbo!
+ - Reseller API support. Create and manage customers and subscriptions.
+ - Delete or modify Gmail threads. Improved message delete/modify performance.
+ - Support for the new G Suite Enterprise license
+ - Manage S/MIME certificates for G Suite Enterprise users
+ - Many fixes and improvements by Ross.
+
+GAM 4.11
+ - Allow newlines in calendar event descriptions (Ross)
+ - All HTTP requests should now honor SSL verify setting, debug, etc
+
+GAM 4.1
+ - Fix "gam create project"
+ - project create cleanups by Ross
+ - Various fixes by Ross
+ - Improved batch command performance. Some commands will see 2-3x speedups.
+ - Faster "gam info user" commands via batch license retrieval
+
+GAM 4.03
+ - Minor fixes by Jay and Ross. Mostly to new install process.
+
+GAM 4.02
+ - "gam create project" command simplifies creation of client_secrets.json and oauth2service.json project files.
+ - Automated wizard simplifies GAM setup on Linux and MacOS (coming soon to Windows MSI).
+ - "gam calendar <email> deleteevent" deletes events by ID or query
+
+GAM 3.8
+- Old GData APIs removed from GAM. Admin Settings and Email Audit commands are no longer included, keep a copy of GAM 3.72 around if you use them. All Email Settings commands now use new Gmail API.
+- Updated httplib2, google-api-client, uritemplate libraries
+- New update check code utilizes GitHub API to check for latest releases.
+- Many fixes and improvements by Ross
+
+GAM 3.72
+- Chrome OS device actions, disable, re-enable and deprovision devices.
+- (beta) MSI Windows build
+- (beta) binary Linux and MacOS builds
+- Numerous fixes and updates by Ross
+
 GAM 3.71
 - Fix update first / last name.
 - upgrade GAM versions of oauth2client, googleapiclient, RSA and six
